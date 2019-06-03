@@ -27,7 +27,7 @@ class C():#cobb douglus utility function
     def l(self):
         return self.opt().x[1]
     def utility(self):
-        return self.opt().fun - self.e()
+        return -self.opt().fun - self.e()
     def e(self):
         return self.b * pow(self.q(), self.beta)
 
@@ -52,7 +52,7 @@ class CG():
     def l(self):
         return self.opt().x[1]
     def utility(self):
-        return self.opt().fun
+        return -self.opt().fun
 
 #============================================================
 
